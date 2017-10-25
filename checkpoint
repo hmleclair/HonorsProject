@@ -1,0 +1,2 @@
+model_checkpoint_path: "pen-shoe-model"
+all_model_checkpoint_paths: "pen-shoe-model"

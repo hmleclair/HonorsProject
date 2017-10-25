@@ -14,9 +14,11 @@ test_image_urls = ["http://farm1.static.flickr.com/42/93179130_fe3409de74.jpg","
 image_count = 0 
 images_data_train = []
 images_data_test = []
+image_array_train = []
+image_array_test = []
 num_channels = 3
-img_width = 300
-img_height = 250
+img_width = 150
+img_height = 100
 filter_hor = np.array([np.array([0,0,0,0,0]),np.array([0,0,0,0,0]),np.array([1,1,1,1,1]),np.array([0,0,0,0,0]), np.array([0,0,0,0,0])])
 #filter_hor_2 = np.array([np.array([0,0,0,0,0]),np.array([0,0,0,0,0]),np.array([1,1,1,1,1]),np.array([0,0,0,0,0]), np.array([0,0,0,0,0])])
 #vertical filter
@@ -26,56 +28,62 @@ filter_diagonal = np.array([np.array([1,0,0,0,1]),np.array([0,1,0,1,0]),np.array
 filters = np.array([filter_hor, filter_ver, filter_diagonal])
 for i in range(0, 10):
 	image_count += 1
-        #urllib.urlretrieve(url, os.path.join(os.getcwd(), 'train' + str(image_count) + '.jpg'))
-        image = Image.open('./train' +str(image_count) + '.jpg')
+       	#urllib.urlretrieve(url, os.path.join(os.getcwd(), 'train' + str(image_count) + '.jpg'))
+       	image = Image.open('./train' +str(image_count) + '.jpg')
 	img_resized = image.resize((img_height, img_width), Image.ANTIALIAS)
        	#image = Image.open( urllib.urlretrieve(url))
-	image_array_train = np.asarray(img_resized)
-	if image_array_train.shape == (img_width, img_height):
+	image_array_train_temp  = np.asarray(img_resized)
+	if image_array_train_temp.shape == (img_width, img_height):
 		temp_image = np.zeros((img_width, img_height, num_channels))
 		for i in range(num_channels):
 			for x in range(img_width):
 				for y in range(img_height):
-					temp_image[x,y,i] = image_array_train[x,y]
-		image_array_train = temp_image
-	print(len(image_array_train))
-	print(image_array_train.shape)
-
-	images_data_train.append(np.array(image_array_train))
-        #image_final = Image.fromarray(image_array)
+					temp_image[x,y,i] = image_array_train_temp[x,y]
+		image_array_train_temp = temp_image
+	print(len(image_array_train_temp))
+	print(image_array_train_temp.shape)
+	images_data_train.append(np.array(image_array_train_temp))
+        
+	#image_final = Image.fromarray(image_array)
         #plt.imshow(image_final)
         #plt.show()
+	print(len(images_data_train))
 
-for i in range(0, 4):
+for i in range(0, 10):
         image_count += 1
         #urllib.urlretrieve(url, os.path.join(os.getcwd(), 'test' +str(image_count) + '.jpg'))
         image = Image.open('./test' + str(image_count) +'.jpg')
  	img_resized = image.resize((img_height, img_width), Image.ANTIALIAS) 
 	#image = Image.open(urllib.urlretrieve(url))
-	image_array_test = np.asarray(img_resized)
-	print(image_array_test.shape)
-	if image_array_test.shape == (img_width, img_height):
-                temp_image = np.zeros((img_width, img_height, num_channels))
-                for i in range(num_channels):
+	image_array_test_temp = np.asarray(img_resized)
+	print(image_array_test_temp.shape)
+	if image_array_test_temp.shape == (img_width, img_height):
+	        temp_image = np.zeros((img_width, img_height, num_channels))
+        	for i in range(num_channels):
                         for x in range(img_width):
-                                for y in range(img_height):
-                                        temp_image[x,y,i] = image_array_test[x,y]
-                image_array_test = temp_image
-        images_data_test.append(np.array(image_array_test))
+                        	 for y in range(img_height):
+                                	 temp_image[x,y,i] = image_array_test_temp[x,y]
+               	image_array_test_temp = temp_image
+	images_data_test.append(np.array(image_array_test_temp))
         #image_final = Image.fromarray(image_array)
         #plt.imshow(image_final)
         #plt.show()
+	
 #write buildDataset function
 def build_dataset():		
-	train_x = images_data_train
-	train_y = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
-	test_x = images_data_test
-	test_y = [1, 1, 0, 0] 
-	classes = 2
+	#train_x = np.array([[images_data_train[0], images_data_train[1], images_data_train[2], images_data_train[3], images_data_train[4]],[images_data_train[5], images_data_train[6], images_data_train[7], images_data_train[8], images_data_train[9]]])
+	train_x = np.array(images_data_train)
+	#train_y = [[1, 1, 1, 1, 1],[ 0, 0, 0, 0, 0]]
+	train_y = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0]	
+	#test_x = np.array([[images_data_test[0], images_data_test[1], images_data_test[2], images_data_test[3], images_data_test[4]],[images_data_test[5], images_data_test[6], images_data_test[7], images_data_test[8], images_data_test[9]]])
+	test_x = np.array(images_data_test)
+	test_y = [1, 1, 0, 0, 1, 1, 1, 0, 0, 0] 
+	classes = [[1, 1, 0, 0, 1], [1, 1, 0, 0 ,0]]
+	possible_classes = [0,1]
 	class_labels = ['pen', 'shoe']
-	return train_x, train_y, test_x, test_y, classes, class_labels
+	return train_x, train_y, test_x, test_y, classes, possible_classes, class_labels
  
-train_x, train_y, test_x, test_y, classes, class_labels = build_dataset()
+train_x, train_y, test_x, test_y, classes, possible_classes, class_labels = build_dataset()
 #gray = np.mean(image, -1)
 #X = tf.placeholder(tf.float32, None)#size?
 #conv = tf.nn.conv2d(X, filters, [1,1,1,1], padding="SAME")
@@ -84,15 +92,14 @@ train_x, train_y, test_x, test_y, classes, class_labels = build_dataset()
 #filteredImage = test.run(conv, feed_dict={X: gray.reshape(1,224,224,1)})
 
 tf.reset_default_graph()
-X = tf.placeholder(tf.float32, shape=[None, img_width, img_height, 3])
-Y_ = tf.placeholder(tf.float32, [len(train_y)])
+X = tf.placeholder(tf.float32, shape=[10, img_width, img_height, 3])
+Y_ = tf.placeholder(tf.float32, [None, 2])
 print(Y_)
 keepRate1 = tf.placeholder(tf.float32)
 keepRate2 = tf.placeholder(tf.float32)
 #convolution first layer
 with tf.name_scope('conv1_1'):
         filter1_1 = tf.Variable(tf.truncated_normal([3, 3, 3, 32], dtype=tf.float32, stddev=1e-1), name='weights1_1')
-
         stride = [1, 1, 1, 1]
         conv = tf.nn.conv2d(X, filter1_1, stride, padding='SAME')
         biases = tf.Variable(tf.constant(0.0, shape=[32], dtype=tf.float32),trainable=True, name='biases1_1')
@@ -150,24 +157,26 @@ with tf.name_scope('fc1') as scope:
 	out = tf.nn.bias_add(tf.matmul(pool2_flat, fc1w), fc1b)
 	fc1 = tf.nn.relu(out)
 	fc1_drop = tf.nn.dropout(fc1, keepRate2)
-	print(fc1_drop)
 
 with tf.name_scope('softmax') as scope:
-	fc2w = tf.Variable(tf.truncated_normal([1, len(train_y)], dtype=tf.float32, stddev=1e-1), name='weights3_2')
+	fc2w = tf.Variable(tf.truncated_normal([shape, len(classes[0])], dtype=tf.float32, stddev=1e-1), name='weights3_2')
 	print(fc2w)
-	fc2b = tf.Variable(tf.constant(1.0, shape=[len(train_y)], dtype=tf.float32), trainable=True, name='biases3_2')
+	fc2b = tf.Variable(tf.constant(1.0, shape=[len(classes[0])], dtype=tf.float32), trainable=True, name='biases3_2')
+	print("fc1_drop shape \n", fc1_drop.shape)
+	print("fc2w shape \n", fc2w.shape)
+	print("fc2b shape \n", fc2b.shape)
 	Ylogits = tf.nn.bias_add(tf.matmul(fc1_drop, fc2w), fc2b)
 	Y = tf.nn.softmax(Ylogits)
 
 
-
+#print(Ylogits)
+print(classes)
 #create loss & optimal
-numEpochs = 400
-batchSize = 10
+numEpochs = 2
+batchSize = 5
 alpha = 1e-5
-
 with tf.name_scope('cross_entropy'):
-	cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=Y, labels=Y_)
+	cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=Ylogits, labels=Y_)
 	loss = tf.reduce_mean(cross_entropy)
 	
 with tf.name_scope('accuracy'):
@@ -200,12 +209,12 @@ for i in range(numEpochs):
 		#Feed forward batch of train images into graph and log accuracy
 		acc = sess.run([accuracy], feed_dict={X: np.array(train_x)[(ii*batchSize):((ii+1)*batchSize),:,:,:], Y_: train_y[(ii*batchSize):((ii+1)*batchSize)], keepRate1:1, keepRate2: 1})
 		accHist.append(acc)
-		print('acc' + acc)
+		print('acc' + str(acc))
 		if step % 5 == 0:
 		#Get Train Summary for one batch and add summary to TensorBoard#Not this part
-			summary = sess.run(write_op, feed_dict={X: np.array(train_x)[(ii*batchSize):((ii+1)*batchSize),:,:,:], Y_: train_y[(ii*batchSize):((ii+1)*batch*Size)], keepRate1: 1, keepRate2: 1})
-			writer_1.add_summary(summary, step)
-			writer_1.flush()
+			summary = sess.run(write_op, feed_dict={X: np.array(train_x)[(ii*batchSize):((ii+1)*batchSize),:,:,:], Y_: train_y[(ii*batchSize):((ii+1)*batchSize)], keepRate1: 1, keepRate2: 1})			
+		writer_1.add_summary(summary, step)
+		writer_1.flush()
 		print(Y_)
 		#stuff missing from website her but may not need
 		#back propogate using adam optimizer to update weights and biases.
@@ -213,8 +222,10 @@ for i in range(numEpochs):
 		print('Epoch number {} Training Accuracy: {}'.format(i+1, np.mean(accHist)))
 
 		#feed forward all test images into graph and log accuracy
-		for iii in range(int(len(train_x[0])/batchSize)):
-			acc = sess.run(accuracy, feed_dict={X: test_x[(iii*batchSize):((iii+1)*batchSize),:,:,:], Y_: test_y[(iii*batchSize):((iii+1)*batchSize)], keepRate1: 1, keepRate2: 1})
+		Y_t = tf.placeholder(tf.float32, [len(test_y)])
+		X_t = tf.placeholder(tf.float32, shape=[None, img_width, img_height, 3])
+		for iii in range(int(len(test_x[0])/batchSize)):
+			acc = sess.run(accuracy, feed_dict={X: np.array(test_x)[(iii*batchSize):((iii+1)*batchSize),:,:,:], Y: test_y[(iii*batchSize):((iii+1)*batchSize)], keepRate1: 1, keepRate2: 1})
 			accHist2.append(acc)
 		print("Test set Accuracy: {}".format(np.mean(accHist2)))
 	
