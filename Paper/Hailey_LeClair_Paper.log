@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 OCT 2017 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  31 OCT 2017 23:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -219,19 +219,20 @@ Overfull \hbox (4.98769pt too wide) in paragraph at lines 45--45
 []\OT1/cmr/bx/n/17.28 PUT A FIG-URE OF A CLOTH-ING ITEM ON TWO
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 55.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
- [2]
-Overfull \hbox (16.48877pt too wide) in paragraph at lines 92--92
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
+ [3]
+Overfull \hbox (16.48877pt too wide) in paragraph at lines 99--99
 []\OT1/cmr/bx/n/17.28 Image Clas-si-fi-ca-tion Us-ing Con-vo-lu-tional Neu-ral 
 Net-
  []
 
-[3] (./Hailey_LeClair_Paper.bbl) [4] (./Hailey_LeClair_Paper.aux)
+[4] (./Hailey_LeClair_Paper.bbl) [5] (./Hailey_LeClair_Paper.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -243,16 +244,16 @@ Here is how much of TeX's memory you used:
  5653 multiletter control sequences out of 15000+600000
  6964 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,4n,23p,1321b,175s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,4n,23p,1321b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hailey_LeClair_Paper.pdf (5 pages, 73683 bytes).
+Output written on Hailey_LeClair_Paper.pdf (6 pages, 75573 bytes).
 PDF statistics:
- 40 PDF objects out of 1000 (max. 8388607)
- 27 compressed objects within 1 object stream
+ 43 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

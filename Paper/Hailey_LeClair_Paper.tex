@@ -46,10 +46,13 @@
 
 
 	Along with the problem of objects being deformable and on an articulated body, we also have to consider other parts of an image. As intelligent humans, we can easily see if a dress in an image is the same as another dress in another image regardless of what other objects are in the background.  An image containing a clothing item could be convoluted with other objects or people in it, or could have an obvious plain background. A method that is able to recognize and classify these objects must account for these degrees of freedom that come with this task. For instance, if we have the same object in multiple images with a white background, a computer may then recognize the white background as a defining feature of this image. When introduced to another image of the same object with a noisy background a computer may then think this is a different object because of the dramatic different in backgrounds amongst this photo and the previous one(s). 
-
-	The angle that a photo was taken of a particular item is also an important consideration. All known objects of an image could be front-facing and if a side view of this object is introduced
- 
+	
  \section{PUT A PICTURE OF A  VERY CONVOLUTED IMAGE HERE }
+
+	The angle that a photo was taken and the location of a particular item in the image is also an important consideration. All known images of an object could be front-facing and if a side view of this object is introduced a computer will have nothing similar to this side view. In this case, the computer will not be able to correctly classify or recognize this object since it has no previous knowledge of its' side view. When they are being worn, clothing items like shoes and hats are almost always near the bottom and top of an image respectively. If a computer has only seen images of shoes in which they are located near the bottom edge of the image, a computer may think that this location is a common characteristic of shoes themselves. This must be considered when choosing images for a computer to classify or match. A shoe can be anywhere in an image and recognizing this when choosing images lets the focus be on features of the object itself. 
+	
+	Even if articulation, deformability, angle and rotation have all been taken into consideration when attempting to classify and recognize objects, colour and illumination must also be added to this long list of considerations. Depending on the lighting conditions and camera, the same red shirt may look pink in one image and orange in another. An image must be recognizable under different lighting conditions or minor variations in the object's colour. What if an image of this shirt is greyscale? This is an important question. If the goal is to recognize a red shirt in an image, greyscale images must not be considered. If they are considered they must be accepted as either grey or colourless even if the shirt in the image is actually red. If the goal is to recognize a plain shirt, colour becomes unimportant and a greyscale image is as important as an RGB image. 
+ \section{PUT A PICTURE OF A SHIRT IN COMPLETELY DIFFERENT LIGHTING}
 
 
 \section{Neural Networks}
