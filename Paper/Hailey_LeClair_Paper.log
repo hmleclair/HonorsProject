@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  3 NOV 2017 00:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  4 NOV 2017 21:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -198,82 +198,100 @@ e
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-LaTeX Warning: Citation `RigidBodyWiki' on page 1 undefined on input line 36.
+LaTeX Warning: Citation `RigidBodyWiki' on page 1 undefined on input line 37.
 
 
 LaTeX Warning: Citation `szeliski2010computer' on page 1 undefined on input lin
-e 36.
+e 37.
 
 
-LaTeX Warning: Citation `wolfram' on page 1 undefined on input line 36.
+LaTeX Warning: Citation `wolfram' on page 1 undefined on input line 37.
 
 
-LaTeX Warning: Citation `lowe1999object' on page 1 undefined on input line 41.
+LaTeX Warning: Citation `lowe1999object' on page 1 undefined on input line 42.
 
 [1]
 
-LaTeX Warning: Citation `lowe1999object' on page 2 undefined on input line 43.
+LaTeX Warning: Citation `lowe1999object' on page 2 undefined on input line 44.
 
 [2]
 
-LaTeX Warning: Citation `viola2004robust' on page 3 undefined on input line 61.
+LaTeX Warning: Citation `viola2004robust' on page 3 undefined on input line 62.
 
 
 
 LaTeX Warning: Citation `aurelienMachineLearning' on page 3 undefined on input 
-line 63.
+line 66.
 
 
-LaTeX Warning: Citation `aurelienMachineLearning' on page 3 undefined on input 
-line 63.
-
-
-LaTeX Warning: Citation `viola2004robust' on page 3 undefined on input line 63.
-
+LaTeX Warning: Citation `szeliski2010computer' on page 3 undefined on input lin
+e 70.
 
 [3]
 
-LaTeX Warning: Citation `aurelienMachineLearning' on page 4 undefined on input 
-line 65.
+LaTeX Warning: Citation `szeliski2010computer' on page 4 undefined on input lin
+e 75.
 
 
 LaTeX Warning: Citation `aurelienMachineLearning' on page 4 undefined on input 
-line 67.
+line 77.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
+
+LaTeX Warning: Citation `aurelienMachineLearning' on page 4 undefined on input 
+line 77.
+
+
+LaTeX Warning: Citation `aurelienMachineLearning' on page 4 undefined on input 
+line 79.
+
+[4]
+
+LaTeX Warning: Citation `KubatMachineLearn' on page 5 undefined on input line 8
+1.
+
+
+LaTeX Warning: Citation `KubatMachineLearn' on page 5 undefined on input line 8
+3.
+
+[5]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
+
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
- [4]
-Overfull \hbox (16.48877pt too wide) in paragraph at lines 120--120
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+ [6]
+Overfull \hbox (16.48877pt too wide) in paragraph at lines 147--147
 []\OT1/cmr/bx/n/17.28 Image Clas-si-fi-ca-tion Us-ing Con-vo-lu-tional Neu-ral 
 Net-
  []
 
-[5] (./Hailey_LeClair_Paper.bbl) [6] (./Hailey_LeClair_Paper.aux)
+[7] (./Hailey_LeClair_Paper.bbl) [8] (./Hailey_LeClair_Paper.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2125 strings out of 493014
- 29179 string characters out of 6133351
- 93009 words of memory out of 5000000
- 5658 multiletter control sequences out of 15000+600000
- 6964 words of font info for 25 fonts, out of 8000000 for 9000
+ 2145 strings out of 493014
+ 29382 string characters out of 6133351
+ 94009 words of memory out of 5000000
+ 5669 multiletter control sequences out of 15000+600000
+ 9819 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,4n,23p,1524b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,5n,23p,1988b,177s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hailey_LeClair_Paper.pdf (7 pages, 81344 bytes).
+></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Hailey_LeClair_Paper.pdf (9 pages, 111482 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
