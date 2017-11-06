@@ -79,13 +79,6 @@ Yet, what if an image of this shirt is in greyscale? This is an important questi
 Where do we start in terms of finding similarities in different images? One approach, and a good approach, is to find and identify specific features of an object which are common to almost every image of the object. Viola and Jones did this in 2004, with Real-Time Robust Face Detection. They classified faces in images, based on the computed values of simple features specific to the faces.\cite{viola2004robust}. They used simple rectangles (figure of Viola and Jones rectangles) to locate areas of brightness in a photo. If these specific areas of brightness are present, then the image contains a face. 
 
 For our purposes, Viola and Jones' specific facial recognition, by design, only works with images of faces. Naturally, though, one would imagine that a similar process to this facial recognition could be used in attempting to recognize other objects in images, like clothing. In theory, we should be able to find prominent features that belong to any given type of clothing item, and use this feature to consistently classify the image.
-
-%THIS IS A PARAGRAPH THAT HAS TO BE TAKEN APART	
-	
-	
-For example, a filter that identifies horizontal lines in an image might be a good predictor for whether a pair of pants are present in an image, given that pants are straight and long. If this feature is found to be a good image predictor by a machine learning algorithm, and such horizontal lines are prominent in a new image, this image will be classified with pants. 
-	
-%ENDS HERE
 		
 	 As stated above, in images, we count on an item to have one or more identifying features, like a human face. One of the ways that we can find the parts in an image that are likely to be important, and make them more prominent, is by applying a filter to the image. 
 
@@ -124,7 +117,11 @@ During each Epoch of a training session, each element in the training set is for
 	
 	The first convolutional layer will not have every input neuron connected to every other neuron in the layer like we see in the hidden layers of some other neural networks. Each neuron in the first convolutional layer is connected to a certain number of neurons in the input image which are referred to as the neuron's local receptive field. The weights applied here are similar to a small image in equal size to the local receptive field of a neuron. This small image of weights that are applied to an image is a convolution kernel. A convolution happens here when this kernel is applied to all neurons local receptive field. This process acts as a sort of inverse filter when applied throughout an entire image. This process of convolution on local receptive fields from a previous layer, helps the network focus on low level features in the beginning stages of forward propogation through the network, and higher level features near the end of the network.\cite{aurelienMachineLearning} 
 	
-	When all of these convolutions are applied in a convolutional layer, we are left with feature maps (or filtered images) of the previous layer. Because these layers return a number of feature maps, the network learns which features are best at predicting the class of a particular image using backpropogation. A feature which helps in predicting the class will be more heavily weighted in the network. whereas a feature which does not contribute to a prediction will be minimally weighted.
+	When all of these convolutions are applied in a convolutional layer, we are left with feature maps (or filtered images) of the previous layer. Because these layers return a number of feature maps, the network learns which features are best at predicting the class of a particular image using back-propogation. A feature which helps in predicting the class will be more heavily weighted in the network. whereas a feature which does not contribute to a prediction will be minimally weighted.
+	
+	Since neural networks apply an activation function after all data has entered a neuron, we would expect CNNs to do the same. There are several different activation functions that a CNN can use on the image data of a layer, but the most common one is the ReLU function. In biological neurons, the sigmoid function gives the best learning results, but with deep neural networks, there are other activation functions (like ReLU) that give better results. The ReLU (Rectified Linear Unit) function \cite{krizhevsky2012imagenet}	
+\[f(x) = max(0, x)\]
+
 	
 \bibstyle{acm}
 \bibdata{References}
