@@ -8,4 +8,4 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A Convolution kernel being applied to an image $\cite {RiverTraill}$}}{11}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces What is returned from Imagenet after searching for dress: http://image-net.org/synset?wnid=n03201638}}{14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}}{15}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}}{16}
