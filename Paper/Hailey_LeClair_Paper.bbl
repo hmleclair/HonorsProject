@@ -1,0 +1,52 @@
+\begin{thebibliography}{10}
+
+\bibitem{RiverTrail}
+Bringing parallelism to the web with river trail.
+
+\bibitem{Sobel}
+Sobel edge detector.
+
+\bibitem{LeonardoFully}
+Leonardo Aurajosantos.
+\newblock Artificial intelligence.
+
+\bibitem{lowe1999object}
+David~G Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock 2:1150--1157, 1999.
+
+\bibitem{viola2004robust}
+Paul Viola and Michael~J Jones.
+\newblock Robust real-time face detection.
+\newblock {\em International journal of computer vision}, 57(2):137--154, 2004.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  1097--1105, 2012.
+
+\bibitem{aurelienMachineLearning}
+Geron Aurelien.
+\newblock {\em Hands-On Machine Learning with Scikit-Learn \& TensorFlow}.
+\newblock O'Rielly Media, Inc., 2017.
+
+\bibitem{wolfram}
+http://scienceworld.wolfram.com/physics/DeformableBody.html.
+\newblock {\em DeformableBody}.
+
+\bibitem{RigidBodyWiki}
+https://en.wikipedia.org/wiki/Rigid\_body.
+\newblock {\em Rigid Body}.
+
+\bibitem{KubatMachineLearn}
+Miroslav Kubat.
+\newblock {\em An Introduction to Machine Learning}.
+\newblock Springer International Publishing Switzerland, 2015.
+
+\bibitem{szeliski2010computer}
+Richard Szeliski.
+\newblock {\em Computer vision: algorithms and applications}.
+\newblock Springer Science \& Business Media, 2010.
+
+\end{thebibliography}
