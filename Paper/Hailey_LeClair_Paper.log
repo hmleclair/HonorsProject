@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 NOV 2017 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  9 NOV 2017 16:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -7,19 +7,20 @@ entering extended mode
 (./Hailey_LeClair_Paper.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -51,7 +52,7 @@ Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count87
+\Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
@@ -76,13 +77,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count88
+\inf@bad=\count89
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count89
-\leftroot@=\count90
+\uproot@=\count90
+\leftroot@=\count91
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count91
-\DOTSCASE@=\count92
+\classnum@=\count92
+\DOTSCASE@=\count93
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
@@ -91,15 +92,15 @@ LaTeX Info: Redefining \cdots on input line 518.
 \big@size=\dimen107
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count93
-\c@MaxMatrixCols=\count94
+\macc@depth=\count94
+\c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
-\c@parentequation=\count95
-\dspbrk@lvl=\count96
+\c@parentequation=\count96
+\dspbrk@lvl=\count97
 \tag@help=\toks16
-\row@=\count97
-\column@=\count98
-\maxfields@=\count99
+\row@=\count98
+\column@=\count99
+\maxfields@=\count100
 \andhelp@=\toks17
 \eqnshift@=\dimen108
 \alignsep@=\dimen109
@@ -136,16 +137,16 @@ LaTeX Font Info:    ... okay on input line 8.
 
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
+\scratchcounter=\count101
 \scratchdimen=\dimen114
 \scratchbox=\box28
-\nofMPsegments=\count101
-\nofMParguments=\count102
+\nofMPsegments=\count102
+\nofMParguments=\count103
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count103
+\MPscratchCnt=\count104
 \MPscratchDim=\dimen115
-\MPnumerator=\count104
-\makeMPintoPDFobject=\count105
+\MPnumerator=\count105
+\makeMPintoPDFobject=\count106
 \everyMPtoPDFconversion=\toks21
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -197,111 +198,159 @@ e
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<images/pixel_image.png, id=10, 626.34pt x 260.975pt>
-File: images/pixel_image.png Graphic file (type png)
+(./Hailey_LeClair_Paper.toc)
+\tf@toc=\write3
+\openout3 = `Hailey_LeClair_Paper.toc'.
 
-<use images/pixel_image.png>
-Package pdftex.def Info: images/pixel_image.png used on input line 38.
-(pdftex.def)             Requested size: 289.07999pt x 120.45215pt.
- [1 <./images/pixel_image.png (PNG copy)>] [2]
-<images/deformable.png, id=17, 666.49pt x 305.14pt>
+ [1
+
+] (./Hailey_LeClair_Paper.lof
+Overfull \hbox (12.06924pt too wide) in paragraph at lines 6--6
+ [][] []\OT1/cmr/m/n/12 Image from Vi-ola and Jones well known pa-per, Ro-bust 
+Real-Time Face Detection[[]] []  
+ []
+
+
+LaTeX Warning: Citation `RiverTraill' on page 2 undefined on input line 8.
+
+)
+\tf@lof=\write4
+\openout4 = `Hailey_LeClair_Paper.lof'.
+
+ [2
+
+]
+Chapter 1.
+<images/pixels.png, id=17, 564.1075pt x 315.1775pt>
+File: images/pixels.png Graphic file (type png)
+ <use images/pixels.png>
+Package pdftex.def Info: images/pixels.png used on input line 42.
+(pdftex.def)             Requested size: 289.07999pt x 161.51749pt.
+
+
+LaTeX Warning: Citation `Fig: simpleBWPixels' on page 3 undefined on input line
+ 49.
+
+[3
+
+] [4 <./images/pixels.png>]
+<images/deformable.png, id=26, 666.49pt x 305.14pt>
 File: images/deformable.png Graphic file (type png)
 
 <use images/deformable.png>
-Package pdftex.def Info: images/deformable.png used on input line 60.
+Package pdftex.def Info: images/deformable.png used on input line 65.
 (pdftex.def)             Requested size: 289.07999pt x 132.35301pt.
+ [5 <./images/deformable.png>]
 
+LaTeX Warning: Citation `Li_ICRA2014' on page 6 undefined on input line 71.
 
-LaTeX Warning: Citation `Li_ICRA2014' on page 3 undefined on input line 66.
-
-[3 <./images/deformable.png>] <images/nike.jpg, id=23, 682.55pt x 682.55pt>
+<images/nike.jpg, id=31, 682.55pt x 682.55pt>
 File: images/nike.jpg Graphic file (type jpg)
-
-<use images/nike.jpg>
-Package pdftex.def Info: images/nike.jpg used on input line 79.
+ <use images/nike.jpg>
+Package pdftex.def Info: images/nike.jpg used on input line 84.
 (pdftex.def)             Requested size: 289.07999pt x 289.0853pt.
- <images/nike_on_man.jpg, id=24, 803.0pt x 531.9875pt>
+
+<images/nike_on_man.jpg, id=32, 803.0pt x 531.9875pt>
 File: images/nike_on_man.jpg Graphic file (type jpg)
 
 <use images/nike_on_man.jpg>
-Package pdftex.def Info: images/nike_on_man.jpg used on input line 81.
+Package pdftex.def Info: images/nike_on_man.jpg used on input line 86.
 (pdftex.def)             Requested size: 289.07999pt x 191.51535pt.
- [4] [5 <./images/nike.jpg> <./images/nike_on_man.jpg>] <images/ViolaJonesFace.
-png, id=31, 426.59375pt x 277.035pt>
+ [6] [7 <./images/nike.jpg> <./images/nike_on_man.jpg>] [8]
+Chapter 2.
+<images/ViolaJonesFace.png, id=43, 426.59375pt x 277.035pt>
 File: images/ViolaJonesFace.png Graphic file (type png)
 
 <use images/ViolaJonesFace.png>
-Package pdftex.def Info: images/ViolaJonesFace.png used on input line 102.
+Package pdftex.def Info: images/ViolaJonesFace.png used on input line 107.
 (pdftex.def)             Requested size: 289.07999pt x 187.743pt.
- [6 <./images/ViolaJonesFace.png>]
-<images/sobel_operator.png, id=37, 662.475pt x 303.1325pt>
+ [9
+
+]
+<images/sobel_operator.png, id=49, 662.475pt x 303.1325pt>
 File: images/sobel_operator.png Graphic file (type png)
 
 <use images/sobel_operator.png>
-Package pdftex.def Info: images/sobel_operator.png used on input line 124.
+Package pdftex.def Info: images/sobel_operator.png used on input line 129.
 (pdftex.def)             Requested size: 289.07999pt x 132.27322pt.
 
 
-LaTeX Warning: Citation `RiverTraill' on page 7 undefined on input line 127.
+LaTeX Warning: Citation `RiverTraill' on page 10 undefined on input line 132.
+
+[10 <./images/ViolaJonesFace.png> <./images/sobel_operator.png>]
+
+LaTeX Warning: Citation `R. Fisher' on page 11 undefined on input line 135.
 
 
-LaTeX Warning: Citation `R. Fisher' on page 7 undefined on input line 130.
+LaTeX Warning: Citation `S. Perkins' on page 11 undefined on input line 135.
 
 
-LaTeX Warning: Citation `S. Perkins' on page 7 undefined on input line 130.
+LaTeX Warning: Citation `A. Walker and E. Wolfart.' on page 11 undefined on inp
+ut line 135.
 
-
-LaTeX Warning: Citation `A. Walker and E. Wolfart.' on page 7 undefined on inpu
-t line 130.
-
-[7] <images/RiverTrain-ImageConvDiagram.png, id=44, 274.02374pt x 164.86594pt>
+<images/RiverTrain-ImageConvDiagram.png, id=55, 274.02374pt x 164.86594pt>
 File: images/RiverTrain-ImageConvDiagram.png Graphic file (type png)
 
 <use images/RiverTrain-ImageConvDiagram.png>
 Package pdftex.def Info: images/RiverTrain-ImageConvDiagram.png used on input l
-ine 134.
+ine 139.
 (pdftex.def)             Requested size: 274.02307pt x 164.86551pt.
 
-<images/convolution4.png, id=45, 357.58594pt x 99.37125pt>
+<images/convolution4.png, id=56, 357.58594pt x 99.37125pt>
 File: images/convolution4.png Graphic file (type png)
 
 <use images/convolution4.png>
-Package pdftex.def Info: images/convolution4.png used on input line 135.
+Package pdftex.def Info: images/convolution4.png used on input line 140.
 (pdftex.def)             Requested size: 357.58505pt x 99.371pt.
 
 
-LaTeX Warning: Citation `RiverTraill' on page 8 undefined on input line 136.
+LaTeX Warning: Citation `RiverTraill' on page 11 undefined on input line 141.
 
-[8 <./images/sobel_operator.png>]
+[11 <./images/RiverTrain-ImageConvDiagram.png> <./images/convolution4.png>]
+[12]
+Chapter 3.
 
-LaTeX Warning: Citation `(' on page 9 undefined on input line 151.
+LaTeX Warning: Citation `(' on page 13 undefined on input line 156.
 
-<images/Imagenet_dress.png, id=50, 1006.76125pt x 598.235pt>
+<images/Imagenet_dress.png, id=64, 1006.76125pt x 598.235pt>
 File: images/Imagenet_dress.png Graphic file (type png)
 
 <use images/Imagenet_dress.png>
-Package pdftex.def Info: images/Imagenet_dress.png used on input line 154.
+Package pdftex.def Info: images/Imagenet_dress.png used on input line 159.
 (pdftex.def)             Requested size: 505.89pt x 300.60468pt.
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 154--155
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 159--160
  [][] 
  []
 
 
-LaTeX Warning: Citation `(' on page 9 undefined on input line 157.
+LaTeX Warning: Citation `(' on page 13 undefined on input line 162.
 
-[9 <./images/RiverTrain-ImageConvDiagram.png> <./images/convolution4.png>]
-[10 <./images/Imagenet_dress.png>] [11] [12] (./Hailey_LeClair_Paper.bbl
-[13]) [14] (./Hailey_LeClair_Paper.aux)
+[13
+
+] [14 <./images/Imagenet_dress.png>]
+<images/NeuralNetwork.png, id=72, 464.73625pt x 275.0275pt>
+File: images/NeuralNetwork.png Graphic file (type png)
+
+<use images/NeuralNetwork.png>
+Package pdftex.def Info: images/NeuralNetwork.png used on input line 174.
+(pdftex.def)             Requested size: 361.34999pt x 213.84912pt.
+ [15 <./images/NeuralNetwork.png>] [16] [17]
+[18] (./Hailey_LeClair_Paper.bbl) [19
+
+] (./Hailey_LeClair_Paper.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2188 strings out of 493014
- 30470 string characters out of 6133351
- 94028 words of memory out of 5000000
- 5703 multiletter control sequences out of 15000+600000
+ 2220 strings out of 493014
+ 30922 string characters out of 6133351
+ 94375 words of memory out of 5000000
+ 5728 multiletter control sequences out of 15000+600000
  10771 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,6n,24p,1177b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -312,10 +361,10 @@ Here is how much of TeX's memory you used:
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
 sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Hailey_LeClair_Paper.pdf (15 pages, 1270016 bytes).
+Output written on Hailey_LeClair_Paper.pdf (20 pages, 1302605 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,4 +1,4 @@
-\documentclass[12pt]{article} %12pt font and article style
+\documentclass[12pt]{report} %12pt font and article style
 
 \usepackage{graphicx} %to import pictures if necessary
 \graphicspath{ {images/} }
@@ -25,9 +25,13 @@
 \today\par
 
 \end{titlepage}
+\tableofcontents
+\newpage
+\listoffigures
+\newpage
 
 
-\section{Introduction}
+\chapter{Introduction}
 
 	Imagine an up and coming clothing designer with a small boutique. They have a small inventory of about 100 different items, and only carry a few different types of items. Say dresses, shirts, shoes, and jeans. The designer wants to provide their customers with an easy way to find the clothing they make. To do this, they want to use an app in which the user can take a photo of any clothing item, and if the boutique has an item that looks similar, that item will be shown to the customer. Is this feasible for a small boutique with minimal technical resources? Can a computer that has five images of different dresses take another image of one of these dresses and find its match? This paper will attempt at answering these questions by exploring how an app like this might be possible using convolutional neural networks, and how a designer with minimal technical knowledge could use this sort of app.
 	
@@ -35,11 +39,12 @@
 	
 \begin{figure}
 \centering
-\includegraphics[width=4in]{pixel_image} 
+\includegraphics[width=4in]{pixels} 
 \caption{A simple black and white image represented by pixel values 0 and 1}
+\label{Fig: SimpleBWPixels}
 \end{figure}
 	
-\subsection{Images}
+\section{Images}
 %CHECK THIS THING ABOUT GREYSCALE VALUE
 	To understand how it might be possible for a computer to recognize a dress in an image we must first understand how an image is represented on a computer. Computers see images as two dimensional data structures of pixels, as in the image on the left of Figure 1. Each pixel has a numeric value. In this simple image, each pixel is either 0 or 1, representing either white or black pixels, respectively. A greyscale image can similarly be represented, where the value is a number between 0 and 255, but larger, and images in colour are obviously a lot more complicated than this trivial example. They often have hundreds or thousands of pixels and each pixel is represented by an RGB (red, green, and blue) value. RGB values are a set of 3 values each of which is a number from 0 to 255. Because an RGB pixel has 3 values, and an image is already a two dimensional structure, RGB images are seen as 3 dimensional by a computer. For this reason, images take more processing power than many other types of data. \cite{szeliski2010computer}. 
 	
@@ -73,7 +78,7 @@
 	%https://www.jumia.com.ng/nike-roshe-one-men-black-shoes-6815562.html
 	
 	
-\subsection{Other Difficulties in Object Recognition in images}
+\section{Other Difficulties in Object Recognition in images}
 \begin{figure}
 \centering
 \includegraphics[width=4in]{nike} 
@@ -93,7 +98,7 @@
 	Yet, what if an image of this shirt is in greyscale? This is an important question. If the goal is to recognize a red shirt in a given image, greyscale images cannot be considered. If they are considered, they must be accepted as either grey or colourless, even if the shirt in the image is actually red. In this case, the greyscale image is irrelevant. On the other hand, If the goal is to recognize a generic T-shirt, colour becomes unimportant, and a greyscale image can be as relevant as an RGB image.
 	When it comes to recognizing clothing in images, it is naturally almost impossible to account for every possible variant from amongst these images. However, if we keep all of these degrees in freedom in mind when attempting to classify or match images, we can avoid many of the problems that come with such variations. 
 		
- \section{Filters and Feature Maps}
+ \chapter{Filters and Feature Maps}
 
 	Where do we start in terms of finding similarities in different images? One approach, and a good approach, is to find and identify specific features of an object which are common to almost every image of the object. Viola and Jones did this in 2004, with Real-Time Robust Face Detection. They classified faces in images, based on the computed values of simple features specific to the faces.\cite{viola2004robust}. They found that simple rectangles (figure of Viola and Jones rectangles) could locate areas of brightness in a photo. If these specific areas of brightness are present, then the image contains a face. 
 
@@ -140,15 +145,15 @@ g(i,j) = \sum_{k,l} f(k, l)h(i + k, j + l)
 	
 	As outlined above, filters can alter an image in dramatic ways. They can be used for edge detection, to blur photos, to adjust colour, or to sharpen images.\cite{szeliski2010computer}. Filters can play a crucial part in detecting any object in an image, as a feature map helps a computer to recognize certain features in an image. Even so, to manually find which features are important and which filters or convolution kernels work for each object is not always a feasible task. Filters are helpful in discovering features in an image and making them more prominent, but when dealing with 1000 or more images, how do we know which filters to use and what features are important? Machine Learning can help us "learn" things about these images, namely which filters or convolution kernels work best, without having to manually go through the whole process. 
 
-\section{Machine Learning}
+\chapter{Machine Learning}
 	Simply put, Machine learning is programming a computer to learn something based on the data itself. People use machine learning to analyze and monitor data much more efficiently than executing it manually. It recognizes patterns, and can be used to learn what people are buying, which emails in your inbox are spam, and in this case, if a pair of jeans is in an image, and indeed which pair of jeans it is. \cite{aurelienMachineLearning}. 
 
-\subsection{Training Sets and Classifiers}
+\section{Training Sets and Classifiers}
 	Using machine learning algorithms, we can program a computer to learn about almost anything as long as we provide it with enough data, and the right data. For instance, if we want a computer to use machine learning to "learn" if a pair of shoes are present in an image, we have to make sure that we provide it with many images of many different kinds and brands of shoes, in different positions and orientations. These images are called our training set.\cite{aurelienMachineLearning}. The images in the training set are input into a machine learning algorithm called a "classifier"\cite{KubatMachineLearn}. The algorithm then goes through the entire set of images and looks for similar features among all or most of the images. 
 	
 	Choosing a training set can be difficult, to properly train a machine learning classifier we need (as stated earlier) a lot of the right data. That might be impossible for a small boutique 
 with only 100 items in total. Because most people do not have a database with thousands of photos, there must be some resource providing photos to take advantage. And there is. 
-	Imagenet \cite(Imagenet) is a website that gives access to millions of pre-classified images, 14,197,122 at this moment, to be exact. An entire database of images of a specific classification can be downloaded, or all images can be accessed by urls. Something like this will be useful for the clothing designer in question. Instead of having to personally take thousands of photographs to have a decent sized training set for the clothing items that this designer has, Imagenet can be used to easily get whatever images are needed, whenever they are needed. Figure 6 shows a screen shot of imagenet in which 1227 images are available and were classified as "Dinner dress, dinner gown, formal, evening gown". If this clothing designer specializes in something like fancy dresses, they can take these images as part of their training set that represents fancy dresses, or any of the labels previously mentioned.
+	Imagenet \cite(Imagenet) is a website that gives access to millions of pre-classified images, 14,197,122 at this moment, to be exact. An entire database of images of a specific classification can be downloaded, or all images can be accessed by urls. Something like this will be useful for the clothing designer in question. Instead of having to personally take thousands of photographs to have a decent sized training set for the clothing items that this designer has, Imagenet can be used to easily get whatever images are needed, whenever they are needed. Figure 7 shows a screen shot of imagenet in which 1227 images are available and were classified as "Dinner dress, dinner gown, formal, evening gown". If this clothing designer specializes in something like fancy dresses, they can take these images as part of their training set that represents fancy dresses, or any of the labels previously mentioned.
 \begin{figure}
 \centering
 \includegraphics[width=7in]{Imagenet_dress}
@@ -160,12 +165,16 @@ with only 100 items in total. Because most people do not have a database with th
 	In this case, supervised learning will be used. With supervised learning, the algorithm already knows the class, or label, that each specific data element in the training set belongs to, and makes use of this for training purposes. If a classifier predicts that a data element belongs to the wrong class during the training phase, supervised learning lets the algorithm run again with the same data to attempt to correct its' previous mistakes\cite{aurelienMachineLearning}. Thus, a classifier learns by making predictions on the same training set continuously until it can accurately predict the classes of all or most data elements in the training set. 
 	
 	How can supervised learning help in predicting which clothing item is in an image? Since we do not have to get everything right the first time with supervised learning, we can use a method that makes mistakes each time (or each epoch) that it iterates through our dataset. When a classifier is in its' training phase, an epoch refers to one time through the training data.
+	
+\section{Neural Networks}
+	Neural networks are an effective way to do this. Like most machine learning algorithms or in this case deep learning algorithms, neural networks take one data element as input, and outputs a probability that this element belongs to each class in a list of classes. What is unique about neural networks is that they are inspired by the human brain. Neural networks are made up of a series of layers, and each layer is made up of one of one or more neurons, like the neurons in a human brain. Every neural network has an input layer made up of input neurons, an output layer made up of output neurons, and 1 or more hidden layers composed of hidden neurons.
 
-	Neural networks are an effective way to do this. Like most machine learning algorithms or in this case deep learning algorithms, neural networks take one data element as input, and outputs a probability that this element belongs to each class in a list of classes. What is unique about neural networks is that they learn in a similar the way as a human brain. 
-
-	Neural networks are made up of a series of layers, and each layer is made up of one of one or more neurons, like the neurons in a human brain. Every neural network has an input layer made up of input neurons, an output layer made up of output neurons, and 1 or more hidden layers composed of hidden neurons. 
-
-	For the purpose of explanation, an example will be given, with only one hidden layer. In the figure below, there is three input neurons, or signals: x1, x2, and x3. Each neuron in the input layer is connected to each neuron in first hidden layer. A neuron in the first hidden layer is fed the input from all input neurons, and each one of these inputs has a weight applied to it by multiplication. In this hidden neuron, all inputs are multiplied by their respective weights, and added together. This sum is then given to an activation function. The output of this activation function is the output value of this hidden neuron. This is done for each neuron in the first hidden layer. If there are more hidden layers, the output of the previous hidden layer's neurons are fed into the neurons in these layers as input. This continues until the output layer is reached, where each output neuron represents a specific class and calculates the probability that the input belongs to this class.\cite{KubatMachineLearn}
+\begin{figure}
+\centering
+\includegraphics[width=5in]{NeuralNetwork}
+\caption{A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}
+\end{figure}
+	For the purpose of explanation, an example will be given, with only one hidden layer. In the figure below, there is three input neurons, or signals: x1, x2, and x3. Each neuron in the input layer is connected to every neuron in first hidden layer. As can be seen in figure 8, every neuron in one layer is connected to every neuron in the next layer. Each one of these connections has its' own unique weight (weights are important) and a neuron in the first hidden layer takes a weighted sum of all input neurons. This weighted sum is then given to an activation function in each hidden layer. The output of this activation function is the output value of this hidden neuron. This is done for each neuron in the first hidden layer. If there are more hidden layers, the output of the previous hidden layer's neurons are fed into the neurons in these layers as input. This continues until the output layer is reached, where each output neuron represents a specific class and calculates the probability that the input belongs to this class.\cite{KubatMachineLearn}
 	
  	A Neural network has input neurons and output neurons, but how does it learn, and how is it supervised? Back-propagation takes the same input through a network to correct any mistakes made in previous predictions (probabilities of classification). This is where the training set comes in. 
 	%Talk more about activation functions here?
@@ -199,7 +208,7 @@ LeakyReLU_\alpha(z) = max(\alpha z, z)
   
   \section{PUT A  FIGURE OF MAX POOLING HERE }
 
-	
+\newpage
 \bibliographystyle{plainyr}
 \bibliography{References}
 \end{document}
