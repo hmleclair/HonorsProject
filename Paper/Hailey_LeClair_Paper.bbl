@@ -6,6 +6,15 @@ Ball gown image.
 \bibitem{RiverTrail}
 Bringing parallelism to the web with river trail.
 
+\bibitem{ImageNet}
+Imagenet.
+
+\bibitem{nikeOnMan}
+Nike image with busy background.
+
+\bibitem{nikeWhite}
+Nike image with white background.
+
 \bibitem{partyDressImage}
 Short party dress image.
 
@@ -44,6 +53,12 @@ Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   1097--1105, 2012.
+
+\bibitem{Li_ICRA2014}
+Yinxiao Li, Chih\-Fan Chen, and Peter~K. Allen.
+\newblock Recognition of deformable object category and pose.
+\newblock In {\em Proceedings of the IEEE International Conference on Robotics
+  and Automation \(ICRA\)}, 2014.
 
 \bibitem{tensorFlow}
 Tensorflow documentation, 2017.

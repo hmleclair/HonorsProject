@@ -1,17 +1,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces A simple black and white image represented by pixel values 0 and 1}}{4}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Clothing shown as a Deformable Object}}{5}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Two photos of Nike Rosch One sneaker. One being worn by a person on cobblestone, and one with a white background}}{7}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Clothing shown as a Deformable Object $\cite {Li_ICRA2014}$}}{5}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Two photos of Nike Rosch One sneaker. One being worn by a person on cobblestone$\cite {nikeWhite}$, and one with a white background$\cite {nikeOnMan}$}}{7}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Image from Viola and Jones well known paper, Robust Real-Time Face Detection\cite {viola2004robust}}}{10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Sobel Operator: Convolution Kernels G$_{x}$ and G$_{y}$ $\cite {Sobel}$}}{10}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces A Convolution kernel being applied to an image $\cite {RiverTrail}$}}{11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces What is returned from Imagenet after searching for dress: http://image-net.org/synset?wnid=n03201638}}{14}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces What is returned from ImageNet after searching for dress$\cite {ImageNet}$}}{14}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}}{17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces max pooling applied to a 3x3 section of pixels using a 2x2 kernel for pooling}}{21}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Max pooling applied to a 3x3 section of pixels using a 2x2 kernel for pooling using a stride of 1.}}{21}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Simple view of AlexNet architecture inspired by Table 13.2 on page 367$\cite {aurelienMachineLearning}$}}{22}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces A portion of code from a CNN tutorial using TensorFlow$\cite {tensorFlow}$}}{24}

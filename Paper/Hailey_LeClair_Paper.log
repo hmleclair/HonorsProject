@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  12 NOV 2017 23:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  13 NOV 2017 01:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -205,7 +205,7 @@ e
  [1
 
 ] (./Hailey_LeClair_Paper.lof
-Overfull \hbox (12.06924pt too wide) in paragraph at lines 6--6
+Overfull \hbox (17.94418pt too wide) in paragraph at lines 6--6
  [][] []\OT1/cmr/m/n/12 Image from Vi-ola and Jones well known pa-per, Ro-bust 
 Real-Time Face Detection[[]] []  
  []
@@ -231,23 +231,20 @@ Package pdftex.def Info: images/pixels.png used on input line 42.
 File: images/deformable.png Graphic file (type png)
 
 <use images/deformable.png>
-Package pdftex.def Info: images/deformable.png used on input line 65.
+Package pdftex.def Info: images/deformable.png used on input line 66.
 (pdftex.def)             Requested size: 289.07999pt x 132.35301pt.
  [5 <./images/deformable.png>]
-
-LaTeX Warning: Citation `Li_ICRA2014' on page 6 undefined on input line 71.
-
 <images/nike.jpg, id=31, 682.55pt x 682.55pt>
 File: images/nike.jpg Graphic file (type jpg)
  <use images/nike.jpg>
-Package pdftex.def Info: images/nike.jpg used on input line 84.
+Package pdftex.def Info: images/nike.jpg used on input line 82.
 (pdftex.def)             Requested size: 289.07999pt x 289.0853pt.
 
 <images/nike_on_man.jpg, id=32, 803.0pt x 531.9875pt>
 File: images/nike_on_man.jpg Graphic file (type jpg)
 
 <use images/nike_on_man.jpg>
-Package pdftex.def Info: images/nike_on_man.jpg used on input line 86.
+Package pdftex.def Info: images/nike_on_man.jpg used on input line 84.
 (pdftex.def)             Requested size: 289.07999pt x 191.51535pt.
  [6] [7 <./images/nike.jpg> <./images/nike_on_man.jpg>] [8]
 Chapter 2.
@@ -255,7 +252,7 @@ Chapter 2.
 File: images/ViolaJonesFace.png Graphic file (type png)
 
 <use images/ViolaJonesFace.png>
-Package pdftex.def Info: images/ViolaJonesFace.png used on input line 108.
+Package pdftex.def Info: images/ViolaJonesFace.png used on input line 106.
 (pdftex.def)             Requested size: 289.07999pt x 187.743pt.
  [9
 
@@ -264,52 +261,36 @@ Package pdftex.def Info: images/ViolaJonesFace.png used on input line 108.
 File: images/sobel_operator.png Graphic file (type png)
 
 <use images/sobel_operator.png>
-Package pdftex.def Info: images/sobel_operator.png used on input line 130.
+Package pdftex.def Info: images/sobel_operator.png used on input line 131.
 (pdftex.def)             Requested size: 289.07999pt x 132.27322pt.
  [10 <./images/ViolaJonesFace.png> <./images/sobel_operator.png>]
-
-LaTeX Warning: Citation `R. Fisher' on page 11 undefined on input line 136.
-
-
-LaTeX Warning: Citation `S. Perkins' on page 11 undefined on input line 136.
-
-
-LaTeX Warning: Citation `A. Walker and E. Wolfart.' on page 11 undefined on inp
-ut line 136.
-
 <images/RiverTrain-ImageConvDiagram.png, id=55, 274.02374pt x 164.86594pt>
 File: images/RiverTrain-ImageConvDiagram.png Graphic file (type png)
 
 <use images/RiverTrain-ImageConvDiagram.png>
 Package pdftex.def Info: images/RiverTrain-ImageConvDiagram.png used on input l
-ine 140.
+ine 141.
 (pdftex.def)             Requested size: 274.02307pt x 164.86551pt.
 
 <images/convolution4.png, id=56, 357.58594pt x 99.37125pt>
 File: images/convolution4.png Graphic file (type png)
 
 <use images/convolution4.png>
-Package pdftex.def Info: images/convolution4.png used on input line 141.
+Package pdftex.def Info: images/convolution4.png used on input line 142.
 (pdftex.def)             Requested size: 357.58505pt x 99.371pt.
  [11 <./images/RiverTrain-ImageConvDiagram.png> <./images/convolution4.png>] [1
 2]
 Chapter 3.
-
-LaTeX Warning: Citation `(' on page 13 undefined on input line 158.
-
 <images/Imagenet_dress.png, id=64, 1006.76125pt x 598.235pt>
 File: images/Imagenet_dress.png Graphic file (type png)
 
 <use images/Imagenet_dress.png>
-Package pdftex.def Info: images/Imagenet_dress.png used on input line 161.
+Package pdftex.def Info: images/Imagenet_dress.png used on input line 163.
 (pdftex.def)             Requested size: 505.89pt x 300.60468pt.
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 161--162
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 163--164
  [][] 
  []
-
-
-LaTeX Warning: Citation `(' on page 13 undefined on input line 164.
 
 [13
 
@@ -319,7 +300,7 @@ Chapter 4.
 File: images/NeuralNetwork.png Graphic file (type png)
 
 <use images/NeuralNetwork.png>
-Package pdftex.def Info: images/NeuralNetwork.png used on input line 181.
+Package pdftex.def Info: images/NeuralNetwork.png used on input line 184.
 (pdftex.def)             Requested size: 361.34999pt x 213.84912pt.
  [16
 
@@ -331,10 +312,10 @@ Chapter 5.
 File: images/max_pooling.png Graphic file (type png)
 
 <use images/max_pooling.png>
-Package pdftex.def Info: images/max_pooling.png used on input line 239.
+Package pdftex.def Info: images/max_pooling.png used on input line 242.
 (pdftex.def)             Requested size: 505.89pt x 229.73312pt.
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 239--240
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 242--243
  [][] 
  []
 
@@ -343,10 +324,10 @@ Overfull \hbox (36.13498pt too wide) in paragraph at lines 239--240
 File: images/alex_net_arch.png Graphic file (type png)
 
 <use images/alex_net_arch.png>
-Package pdftex.def Info: images/alex_net_arch.png used on input line 255.
+Package pdftex.def Info: images/alex_net_arch.png used on input line 258.
 (pdftex.def)             Requested size: 216.81pt x 218.613pt.
 
-Overfull \hbox (3.68442pt too wide) in paragraph at lines 252--258
+Overfull \hbox (3.68442pt too wide) in paragraph at lines 255--261
 []\OT1/cmr/m/n/12 There are a few fa-mous CNN ar-chi-tec-tures. These in-clude 
 LeNet-5, AlexNet, GoogLeNet,
  []
@@ -357,7 +338,7 @@ Chapter 6.
 File: images/tensorflow_cnn.png Graphic file (type png)
 
 <use images/tensorflow_cnn.png>
-Package pdftex.def Info: images/tensorflow_cnn.png used on input line 267.
+Package pdftex.def Info: images/tensorflow_cnn.png used on input line 270.
 (pdftex.def)             Requested size: 361.34999pt x 218.99695pt.
  [23
 
@@ -365,92 +346,92 @@ Package pdftex.def Info: images/tensorflow_cnn.png used on input line 267.
 <images/tf_rank.png, id=111, 473.77pt x 225.84375pt>
 File: images/tf_rank.png Graphic file (type png)
  <use images/tf_rank.png>
-Package pdftex.def Info: images/tf_rank.png used on input line 276.
+Package pdftex.def Info: images/tf_rank.png used on input line 279.
 (pdftex.def)             Requested size: 289.07999pt x 137.80583pt.
 
 <images/rank0.png, id=112, 893.3375pt x 214.8025pt>
 File: images/rank0.png Graphic file (type png)
  <use images/rank0.png>
-Package pdftex.def Info: images/rank0.png used on input line 277.
+Package pdftex.def Info: images/rank0.png used on input line 280.
 (pdftex.def)             Requested size: 505.89pt x 121.64223pt.
 
 <images/rank2.png, id=113, 891.33pt x 199.74625pt>
 File: images/rank2.png Graphic file (type png)
  <use images/rank2.png>
-Package pdftex.def Info: images/rank2.png used on input line 278.
+Package pdftex.def Info: images/rank2.png used on input line 281.
 (pdftex.def)             Requested size: 505.89pt x 113.36888pt.
 
 <images/rank1.png, id=114, 890.32625pt x 250.9375pt>
 File: images/rank1.png Graphic file (type png)
  <use images/rank1.png>
-Package pdftex.def Info: images/rank1.png used on input line 279.
+Package pdftex.def Info: images/rank1.png used on input line 282.
 (pdftex.def)             Requested size: 505.89pt x 142.58403pt.
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 276--280
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 279--283
  [] 
  []
 
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 276--280
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 279--283
  [] 
  []
 
 
-Overfull \hbox (36.13498pt too wide) in paragraph at lines 276--280
+Overfull \hbox (36.13498pt too wide) in paragraph at lines 279--283
  [] 
  []
 
 [24 <./images/tensorflow_cnn.png>] [25 <./images/tf_rank.png> <./images/rank0.p
 ng> <./images/rank2.png> <./images/rank1.png>]
-Overfull \hbox (92.17026pt too wide) in paragraph at lines 290--290
-[]\OT1/cmtt/m/n/12 input = tf.placeholder(tf.float32, shape=[batch_size, img_wi
-dth, img_height, num_channels])[] 
+Overfull \hbox (55.12024pt too wide) in paragraph at lines 293--293
+[]\OT1/cmtt/m/n/12 input = tf.placeholder(tf.float32, shape=[None, img_width, i
+mg_height, num_channels])[] 
  []
 
 
-Overfull \hbox (153.92029pt too wide) in paragraph at lines 329--329
+Overfull \hbox (153.92029pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_conv_1 = tf.nn.conv2d(input=input, filter=weights_kern
 el, strides=[1, 1, 1, 1], padding='SAME')[] 
  []
 
 
-Overfull \hbox (215.67032pt too wide) in paragraph at lines 329--329
+Overfull \hbox (215.67032pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_max_pool_1 = tf.nn.max_pool(value=layer_ReLU_1, ksize=
 [1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')[] 
  []
 
 
-Overfull \hbox (221.84532pt too wide) in paragraph at lines 329--329
+Overfull \hbox (221.84532pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_conv_2 = tf.nn.conv2d(input=layer_max_pool_1, filter=w
 eights_kernel, strides=[1, 1, 1, 1], padding='SAME')[] 
  []
 
 [26]
-Overfull \hbox (215.67032pt too wide) in paragraph at lines 329--329
+Overfull \hbox (215.67032pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_max_pool_2 = tf.nn.max_pool(value=layer_ReLU_2, ksize=
 [1, 2, 2, 1], strides=[1, 2, 2, 1], padding='SAME')[] 
  []
 
 
-Overfull \hbox (135.39528pt too wide) in paragraph at lines 329--329
+Overfull \hbox (135.39528pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 #first fully connected layer which takes layer_max_pool_2 as
  input and flattens the previous layer[] 
  []
 
 
-Overfull \hbox (172.4453pt too wide) in paragraph at lines 329--329
+Overfull \hbox (172.4453pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_fully_connected_1 = tf.layers.dropout(layer_fully_conn
 ected_1, rate=dropout, training=is_training)[] 
  []
 
 
-Overfull \hbox (172.4453pt too wide) in paragraph at lines 329--329
+Overfull \hbox (172.4453pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_fully_connected_2 = tf.layers.dropout(layer_fully_conn
 ected_2, rate=dropout, training=is_training)[] 
  []
 
 
-Overfull \hbox (30.42023pt too wide) in paragraph at lines 329--329
+Overfull \hbox (30.42023pt too wide) in paragraph at lines 334--334
 []\OT1/cmtt/m/n/12 layer_fully_connected_out = tf.layers.dense(layer_fully_conn
 ected_2, num_classes)[] 
  []
@@ -463,13 +444,13 @@ Chapter 7.
 File: images/short_party_dress.jpg Graphic file (type jpg)
 
 <use images/short_party_dress.jpg>
-Package pdftex.def Info: images/short_party_dress.jpg used on input line 362.
+Package pdftex.def Info: images/short_party_dress.jpg used on input line 367.
 (pdftex.def)             Requested size: 216.81pt x 216.80524pt.
 
 <images/ball_gown.jpg, id=141, 770.88pt x 947.54pt>
 File: images/ball_gown.jpg Graphic file (type jpg)
  <use images/ball_gown.jpg>
-Package pdftex.def Info: images/ball_gown.jpg used on input line 363.
+Package pdftex.def Info: images/ball_gown.jpg used on input line 368.
 (pdftex.def)             Requested size: 216.81pt x 266.49496pt.
 
 [30 <./images/short_party_dress.jpg> <./images/ball_gown.jpg>] [31]
@@ -478,32 +459,29 @@ Chapter 8.
 
 ] [33
 
-]) [34] (./Hailey_LeClair_Paper.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+]) [34] (./Hailey_LeClair_Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2270 strings out of 493014
- 32021 string characters out of 6133351
- 94413 words of memory out of 5000000
- 5768 multiletter control sequences out of 15000+600000
+ 2269 strings out of 493014
+ 32000 string characters out of 6133351
+ 94429 words of memory out of 5000000
+ 5767 multiletter control sequences out of 15000+600000
  10335 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,6n,23p,1124b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.p
-fb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Hailey_LeClair_Paper.pdf (35 pages, 1713706 bytes).
+ 38i,6n,23p,1126b,243s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt12.pfb>
+Output written on Hailey_LeClair_Paper.pdf (35 pages, 1715002 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  115 compressed objects within 2 object streams
