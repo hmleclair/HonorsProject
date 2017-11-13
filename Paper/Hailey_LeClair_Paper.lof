@@ -5,7 +5,15 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Image from Viola and Jones well known paper, Robust Real-Time Face Detection\cite {viola2004robust}}}{10}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Sobel Operator: Convolution Kernels G$_{x}$ and G$_{y}$ $\cite {Sobel}$}}{10}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces A Convolution kernel being applied to an image $\cite {RiverTraill}$}}{11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A Convolution kernel being applied to an image $\cite {RiverTrail}$}}{11}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces What is returned from Imagenet after searching for dress: http://image-net.org/synset?wnid=n03201638}}{14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}}{16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}}{17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces max pooling applied to a 3x3 section of pixels using a 2x2 kernel for pooling}}{21}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Simple view of AlexNet architecture inspired by Table 13.2 on page 367$\cite {aurelienMachineLearning}$}}{22}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A portion of code from a CNN tutorial using TensorFlow$\cite {tensorFlow}$}}{24}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Tensor ranks and the mathematical entities they represent followed by examples of tensors of different ranks.$\cite {tensorFlow}$}}{25}
+\addvspace {10\p@ }

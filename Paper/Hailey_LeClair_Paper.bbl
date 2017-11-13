@@ -3,8 +3,8 @@
 \bibitem{RiverTrail}
 Bringing parallelism to the web with river trail.
 
-\bibitem{Sobel}
-Sobel edge detector.
+\bibitem{deepMachineMastry}
+What is deep learning.
 
 \bibitem{LeonardoFully}
 Leonardo Aurajosantos.
@@ -15,16 +15,31 @@ David~G Lowe.
 \newblock Object recognition from local scale-invariant features.
 \newblock 2:1150--1157, 1999.
 
+\bibitem{Sobel}
+R.~Fisher, S.~Perkins, A.~Walker, and E.~Wolfart.
+\newblock Sobel edge detector, 2003.
+
 \bibitem{viola2004robust}
 Paul Viola and Michael~J Jones.
 \newblock Robust real-time face detection.
 \newblock {\em International journal of computer vision}, 57(2):137--154, 2004.
+
+\bibitem{errorHeaton}
+Jeff Heaton.
+\newblock Neural network training (part 2): Neural network error calculation,
+  2010.
 
 \bibitem{krizhevsky2012imagenet}
 Alex Krizhevsky, Ilya Sutskever, and Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   1097--1105, 2012.
+
+\bibitem{tensorFlow}
+Tensorflow documentation, 2017.
+
+\bibitem{activationMedium}
+Understanding activation functions in neural networks, 2017.
 
 \bibitem{aurelienMachineLearning}
 Geron Aurelien.

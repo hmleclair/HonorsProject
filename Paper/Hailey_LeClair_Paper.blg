@@ -1,73 +1,65 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Hailey_LeClair_Paper.aux
-White space in argument---line 32 of file Hailey_LeClair_Paper.aux
+White space in argument---line 44 of file Hailey_LeClair_Paper.aux
  : \citation{R.
  :              Fisher}
 I'm skipping whatever remains of this command
-White space in argument---line 33 of file Hailey_LeClair_Paper.aux
+White space in argument---line 45 of file Hailey_LeClair_Paper.aux
  : \citation{S.
  :              Perkins}
 I'm skipping whatever remains of this command
-White space in argument---line 34 of file Hailey_LeClair_Paper.aux
+White space in argument---line 46 of file Hailey_LeClair_Paper.aux
  : \citation{A.
  :              Walker and E. Wolfart.}
 I'm skipping whatever remains of this command
 The style file: plainyr.bst
 Database file #1: References.bib
-Warning--I'm ignoring lowe1999object's extra "title" field
---line 15 of file References.bib
-I was expecting a `,' or a `}'---line 82 of file References.bib
- : 
- : year={2003}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Li_ICRA2014"
-Warning--I didn't find a database entry for "RiverTraill"
 Warning--I didn't find a database entry for "("
 Warning--to sort, need year or key in RiverTrail
-Warning--to sort, need year or key in Sobel
+Warning--to sort, need year or key in deepMachineMastry
 Warning--to sort, need year or key in LeonardoFully
 Warning--empty journal in lowe1999object
-You've used 11 entries,
+You've used 15 entries,
             2146 wiz_defined-function locations,
-            565 strings with 5477 characters,
-and the built_in function-call counts, 2769 in all, are:
-= -- 261
-> -- 92
+            580 strings with 5895 characters,
+and the built_in function-call counts, 3661 in all, are:
+= -- 336
+> -- 138
 < -- 1
-+ -- 38
-- -- 26
-* -- 138
-:= -- 457
-add.period$ -- 26
-call.type$ -- 11
-change.case$ -- 35
++ -- 56
+- -- 40
+* -- 177
+:= -- 605
+add.period$ -- 32
+call.type$ -- 15
+change.case$ -- 52
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 120
-empty$ -- 269
-format.name$ -- 26
-if$ -- 592
+cite$ -- 19
+duplicate$ -- 148
+empty$ -- 357
+format.name$ -- 40
+if$ -- 781
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 15
 missing$ -- 9
-newline$ -- 51
-num.names$ -- 24
-pop$ -- 79
+newline$ -- 65
+num.names$ -- 34
+pop$ -- 124
 preamble$ -- 1
-purify$ -- 29
+purify$ -- 42
 quote$ -- 0
-skip$ -- 100
+skip$ -- 134
 stack$ -- 0
-substring$ -- 154
-swap$ -- 22
+substring$ -- 174
+swap$ -- 26
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 38
+type$ -- 54
 warning$ -- 4
-while$ -- 31
-width$ -- 13
-write$ -- 95
-(There were 4 error messages)
+while$ -- 41
+width$ -- 17
+write$ -- 123
+(There were 3 error messages)

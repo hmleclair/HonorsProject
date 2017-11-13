@@ -5,5 +5,16 @@
 \contentsline {chapter}{\numberline {2}Filters and Feature Maps}{9}
 \contentsline {chapter}{\numberline {3}Machine Learning}{13}
 \contentsline {section}{\numberline {3.1}Training Sets and Classifiers}{13}
-\contentsline {section}{\numberline {3.2}Neural Networks}{15}
-\contentsline {section}{\numberline {3.3}PUT A FIGURE OF MAX POOLING HERE }{18}
+\contentsline {chapter}{\numberline {4}Neural Networks}{16}
+\contentsline {section}{\numberline {4.1}Activation Functions}{16}
+\contentsline {section}{\numberline {4.2}Training and Back-propagation}{17}
+\contentsline {chapter}{\numberline {5}Convolutional Neural Networks}{19}
+\contentsline {section}{\numberline {5.1}What are convolutional Neural Networks?}{19}
+\contentsline {section}{\numberline {5.2}Convolutional Layers \& ReLU}{19}
+\contentsline {section}{\numberline {5.3}Max Pooling Layer}{21}
+\contentsline {subsection}{\numberline {5.3.1}Fully Connected Layers and Architectures}{21}
+\contentsline {chapter}{\numberline {6}TensorFlow}{23}
+\contentsline {section}{\numberline {6.1}What is TensorFlow?}{23}
+\contentsline {section}{\numberline {6.2}What is a Tensor}{24}
+\contentsline {section}{\numberline {6.3}Using TensorFlow to Build a CNN}{24}
+\contentsline {chapter}{\numberline {7}Working with a CNN}{28}
