@@ -1,7 +1,13 @@
 \begin{thebibliography}{10}
 
+\bibitem{ballGownImage}
+Ball gown image.
+
 \bibitem{RiverTrail}
 Bringing parallelism to the web with river trail.
+
+\bibitem{partyDressImage}
+Short party dress image.
 
 \bibitem{deepMachineMastry}
 What is deep learning.
@@ -9,6 +15,10 @@ What is deep learning.
 \bibitem{LeonardoFully}
 Leonardo Aurajosantos.
 \newblock Artificial intelligence.
+
+\bibitem{nearestNeighbour}
+Tavish Srivastava.
+\newblock Introduction to k-nearest neighbors : Simplified.
 
 \bibitem{lowe1999object}
 David~G Lowe.
