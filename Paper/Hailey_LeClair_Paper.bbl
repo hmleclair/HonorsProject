@@ -60,6 +60,13 @@ Yinxiao Li, Chih\-Fan Chen, and Peter~K. Allen.
 \newblock In {\em Proceedings of the IEEE International Conference on Robotics
   and Automation \(ICRA\)}, 2014.
 
+\bibitem{gradientMastry}
+Jason Brownlee.
+\newblock Gradient descent for machine learning, 2016.
+
+\bibitem{sobelWiki}
+Sobel operator, 2017.
+
 \bibitem{tensorFlow}
 Tensorflow documentation, 2017.
 

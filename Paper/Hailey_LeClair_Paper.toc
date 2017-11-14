@@ -1,25 +1,25 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {1.1}Images}{3}
 \contentsline {section}{\numberline {1.2}Objects in Images}{4}
-\contentsline {section}{\numberline {1.3}Other Difficulties in Object Recognition in images}{6}
+\contentsline {section}{\numberline {1.3}Other Challenges in Object Recognition in images}{8}
 \contentsline {chapter}{\numberline {2}Filters and Feature Maps}{9}
-\contentsline {chapter}{\numberline {3}Machine Learning}{13}
-\contentsline {section}{\numberline {3.1}Training Sets and Classifiers}{13}
-\contentsline {chapter}{\numberline {4}Neural Networks}{16}
-\contentsline {section}{\numberline {4.1}Activation Functions}{16}
-\contentsline {section}{\numberline {4.2}Training and Back-propagation}{17}
-\contentsline {chapter}{\numberline {5}Convolutional Neural Networks}{19}
-\contentsline {section}{\numberline {5.1}What are convolutional Neural Networks?}{19}
-\contentsline {section}{\numberline {5.2}Convolutional Layers \& ReLU}{19}
-\contentsline {section}{\numberline {5.3}Max Pooling Layer}{21}
-\contentsline {section}{\numberline {5.4}Fully Connected Layers and Architectures}{21}
-\contentsline {chapter}{\numberline {6}TensorFlow}{23}
-\contentsline {section}{\numberline {6.1}What is TensorFlow?}{23}
-\contentsline {section}{\numberline {6.2}What is a Tensor}{24}
-\contentsline {section}{\numberline {6.3}Using TensorFlow to Build a CNN}{24}
-\contentsline {chapter}{\numberline {7}Unanswered Questions and Possibilities}{28}
-\contentsline {section}{\numberline {7.1}Using a Pretrained CNN}{28}
-\contentsline {section}{\numberline {7.2}Possibilities for More Convolutional Neural Networks}{29}
-\contentsline {section}{\numberline {7.3}Possibilities for a Training Set}{29}
-\contentsline {section}{\numberline {7.4}Possibilities for Image Matching}{31}
-\contentsline {chapter}{\numberline {8}Experiments and Conclusion}{32}
+\contentsline {chapter}{\numberline {3}Machine Learning}{14}
+\contentsline {section}{\numberline {3.1}Training Sets and Classifiers}{14}
+\contentsline {chapter}{\numberline {4}Neural Networks}{18}
+\contentsline {section}{\numberline {4.1}Activation Functions}{19}
+\contentsline {section}{\numberline {4.2}Training and Back-propagation}{20}
+\contentsline {chapter}{\numberline {5}Convolutional Neural Networks}{21}
+\contentsline {section}{\numberline {5.1}What are convolutional Neural Networks?}{21}
+\contentsline {section}{\numberline {5.2}Convolutional Layers \& ReLU}{21}
+\contentsline {section}{\numberline {5.3}Max Pooling Layer}{23}
+\contentsline {section}{\numberline {5.4}Fully Connected Layers and Architectures}{23}
+\contentsline {chapter}{\numberline {6}TensorFlow}{25}
+\contentsline {section}{\numberline {6.1}What is TensorFlow?}{25}
+\contentsline {section}{\numberline {6.2}What is a Tensor}{26}
+\contentsline {section}{\numberline {6.3}Using TensorFlow to Build a CNN}{26}
+\contentsline {chapter}{\numberline {7}Methods}{30}
+\contentsline {section}{\numberline {7.1}Using a Pretrained CNN}{30}
+\contentsline {section}{\numberline {7.2}Layering Classifiers}{31}
+\contentsline {section}{\numberline {7.3}Possibilities for a Training Set}{31}
+\contentsline {section}{\numberline {7.4}Possibilities for Image Matching}{33}
+\contentsline {chapter}{\numberline {8}Experiments and Conclusion}{34}
