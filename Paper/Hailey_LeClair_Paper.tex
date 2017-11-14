@@ -4,12 +4,26 @@
 \graphicspath{ {images/} }
 \usepackage{amsmath} %to allow math symbols to show up
 \usepackage{listings}
+\lstset{
+   aboveskip=1ex,
+   basicstyle=\small\ttfamily,
+   belowskip=1ex,
+   breaklines=true,
+   columns=fullflexible,
+   framerule=0pt,
+   framexrightmargin=0em,
+   framexleftmargin=0em,
+   language=[LaTeX]TeX,
+   numbers=left,
+   numberstyle=\footnotesize\sffamily,
+   tabsize=2
+}
 \usepackage{fullpage}
 \setlength
 \parindent{24pt}
 
 \begin{document}
-\begin{titlepage}
+\begin{titlepage} 
 %I 'borrowed' this title page example from: https://en.wikibooks.org/wiki/LaTeX/Title_Creation
 \centering
     {\scshape\LARGE University of Prince Edward Island\par}
@@ -42,8 +56,8 @@
 \begin{figure}
 \centering
 \includegraphics[width=4in]{pixels} 
-\caption{A simple black and white image represented by pixel values 0 and 1}
-\label{fig: Binary Image}
+\caption[Binary Image]
+	{A simple black and white image represented by pixel values 0 and 1}
 \end{figure}
 	
 \section{Images}
@@ -66,8 +80,8 @@
  \begin{figure}
 \centering
 \includegraphics[width=4in]{deformable} 
-\caption{Clothing shown as a Deformable Object $\cite{Li_ICRA2014}$}
-\label{fig: Clothing as a Deformable Object}
+\caption[Clothing as a Deformable Object]
+	{Clothing shown as a Deformable Object $\cite{Li_ICRA2014}$}
 \end{figure}
 
 	A deformable object, in contrast with the others, ``changes its shape and/or volume while being acted upon by any kind of external force"\cite{wolfram}. Depending on the degree to which an object deforms, or the amount of force applied, many images of an object could show it as having completely different dimensions and shape. As with articulated objects, the uncertainty of the general shape or dimensions makes deformable objects especially challenging. This problem, and the problem with articulated objects is particularly relevant with clothing. 
@@ -85,8 +99,8 @@
 \includegraphics[width=4in]{nike} 
 \centering
 \includegraphics[width=4in]{nike_on_man} 
-\caption{Two photos of Nike Rosch One sneaker. One being worn by a person on cobblestone$\cite{nikeWhite}$, and one with a white background$\cite{nikeOnMan}$}
-\label{fig: Sneaker Images with Different Backgrounds}
+\caption[Sneaker Images with Different Backgrounds]
+	{Two photos of Nike Rosch One sneaker. One being worn by a person on cobblestone$\cite{nikeWhite}$, and one with a white background$\cite{nikeOnMan}$}
 \end{figure}
 	
 	Figure 1.3 shows the same Nike shoe in two different images. We can speculate here that the photo has been taken from almost the same angle in both images. With a quick glance at both of these images, we can confidently say that the shoes in these images are in fact the same, but as learned by many in a first year computer science course: a computer does exactly what you tell it to do. This is relevant because unless a computer knows how to deal with backgrounds in images, it will assume these two images are of completely different objects. 
@@ -108,8 +122,8 @@
 \begin{figure}
 \centering
 \includegraphics[width=4in]{ViolaJonesFace} 
-\caption{Image from Viola and Jones, Robust Real-Time Face Detection$\cite{viola2004robust}$}
-\label{fig: Face Detection Rectangles}
+\caption[Viola and Jones Face Detection Rectangles]
+	{Image from Viola and Jones, Robust Real-Time Face Detection$\cite{viola2004robust}$}
 \end{figure}
 
 	For our purposes, Viola and Jones' specific facial recognition, by design, only works with images of faces. Naturally, though, one would imagine that a similar process to this facial recognition could be used in attempting to recognize other objects in images, like clothing. In theory, we should be able to find prominent features that belong to any given type of clothing item, and use this feature to consistently classify the image.
@@ -145,7 +159,8 @@ g(i,j) = \sum_{k,l} f(k, l)h(i + k, j + l)
 \centering
 \includegraphics{RiverTrain-ImageConvDiagram} 
 \includegraphics{convolution4}
-\caption{A Convolution kernel being applied to an image $\cite{RiverTrail}$}
+\caption[Convolution Kernel Applied to Image]
+	{A Convolution kernel being applied to an image $\cite{RiverTrail}$}
 \end{figure}	 
 	 
 	 After applying a \emph{convolution} operator, \emph{correlation} operator, or any type of filter to an image, we are left with a feature map. A feature map is a filtered image. Since each filter highlights a certain characteristic, or set of features in the image, a feature map can provide us with a lot of information about what is in an image, and what is important in an image\cite{aurelienMachineLearning}. Having multiple feature maps (for example, Figure 2.3), which can show us if images have a number of different features, can then be used to help us learn things about an image.
@@ -156,7 +171,8 @@ g(i,j) = \sum_{k,l} f(k, l)h(i + k, j + l)
 \includegraphics[width=3in]{sobel_x} 
 \includegraphics[width=3in]{sobel_y} 
 \includegraphics[width=3in]{sobel_gradient} 
-\caption{An image of a bike in front of bricks, followed by 3 feature maps. The first (top right) using Sobel's G$_{x}$ the second using G$_{y}$ and the third using gradient magnitude (G$_{x}$ and G$_{y}$) $\cite{sobelWiki}$}.
+\caption[Sobel Filter Applied to Image]
+	{An image of a bike in front of bricks, followed by 3 feature maps. The first (top right) using Sobel's G$_{x}$ the second using G$_{y}$ and the third using gradient magnitude (G$_{x}$ and G$_{y}$) $\cite{sobelWiki}$}.
 \end{figure}	
 	
 	As outlined above, filters can alter an image in dramatic ways. They can be used for edge detection, to blur photos, to adjust colour, or to sharpen images\cite{szeliski2010computer}. Filters can play a crucial part in detecting any object in an image, as a feature map highlights characteristics and their locations within an image. The computer can use the feature maps to build up knowledge about objects it wants to recognize. Even so, to manually find which features are important and which filters or convolution kernels work for each object is not always a feasible task. Filters are helpful in discovering features in an image and making them more prominent, but when dealing with 1000 or more images, how do we know which filters to use and what features are important? 
@@ -180,13 +196,15 @@ with only 100 items in total. Because most people do not have a database with th
 \begin{figure}
 \centering
 \includegraphics[width=7in]{Imagenet_dress}
-\caption{What is returned from ImageNet after searching for dress$\cite{ImageNet}$}
+\caption[ImageNet Search]
+	{What is returned from ImageNet after searching for dress$\cite{ImageNet}$}
 \end{figure}	
 
 \begin{figure}
 \centering
 \includegraphics[width=7in]{Imagenet_flow}
-\caption{The flow of a classifier trained using ImageNet}
+\caption[Flow Diagram: ImageNet Classifier]
+	{The flow of a classifier trained using ImageNet}
 \end{figure}	
 
 	Even with the tremendous help of ImageNet\cite{ImageNet} providing a good training set, we need a classifier to recognize (or correctly classify) a clothing item in an image. Once a classifier is trained, it gives us a probability that the image belongs to each of the classes it has been trained on. Whichever probability is the highest, is the predicted class of an item\cite{KubatMachineLearn}. If the designer with a boutique has photos of their clothing ready on hand, the theoretical app and classifier should be able to take images of all of the designer's clothes, and give each image a label, or class. The images from ImageNet are not images of the designers dresses, but ImageNet is used to narrow down the search to dresses only.
@@ -207,7 +225,8 @@ with only 100 items in total. Because most people do not have a database with th
 \begin{figure}
 \centering
 \includegraphics[width=5in]{NeuralNetwork}
-\caption{A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}
+\caption[Simple Neural Network]
+	{A simple neural network with 3 input neurons, 1 hidden layer with 4 neurons, and 2 output neurons}
 \end{figure}
 	For the purpose of explanation consider Figure 4.1, which diagrams a neural network with an input layer, one hidden layer and an output layer. There are three input neurons, or signals: x$_{1}$, x$_{2}$, and x$_{3}$. Each neuron in the input layer is connected to every neuron in first hidden layer. As can be seen in Figure 4.1, every neuron in one layer is connected to every neuron in the next layer. Each one of these connections has its own unique weight (weights are important) and a neuron in the first hidden layer takes a weighted sum of all input neurons. This weighted sum is then given to an activation function in each hidden layer. The output of this activation function is the output value of this hidden neuron. This is done for each neuron in the first hidden layer. If there are more hidden layers, the output of the previous hidden layer's neurons are fed into the neurons in these layers as input. This continues until the output layer is reached, where each output neuron represents a specific class and calculates the probability that the input belongs to this class.\cite{KubatMachineLearn}
 	
@@ -266,7 +285,8 @@ LeakyReLU_\alpha(z) = max(\alpha z, z)
 \begin{figure}
 \centering
 \includegraphics[width=5in]{max_pooling}
-\caption{Max pooling applied to a 3x3 section of pixels using a 2x2 kernel for pooling using a stride of 1.}
+\caption[Max Pooling Example]
+	{Max pooling applied to a 3x3 section of pixels using a 2x2 kernel for pooling using a stride of 1.}
 \end{figure}		
 	Max pooling layers summarize the image data by taking the largest pixel value in a group of pixels and using this to represent the group (shown in figure 5.1). Doing this across an entire image gives a smaller image with less noise. Max pooling layers are usually in between or after convolutional layers (after ReLU has been computed for the convolutional layer). Throughout the network the classification of an image becomes more clear, so it makes sense that after each convolution, we pool the feature maps for the most prominent pixels, which gets us a higher level view each time. . 
 
@@ -282,7 +302,8 @@ LeakyReLU_\alpha(z) = max(\alpha z, z)
 \begin{figure}
 \centering
 \includegraphics[width=3in]{alex_net_arch}
-\caption{Simple view of AlexNet architecture$\cite{aurelienMachineLearning}$}
+\caption[CNN Architecture: AlexNet]
+	{Simple view of AlexNet architecture$\cite{aurelienMachineLearning}$}
 \end{figure}		
 
 \chapter{TensorFlow}
@@ -294,7 +315,8 @@ LeakyReLU_\alpha(z) = max(\alpha z, z)
 \begin{figure}
 \centering
 \includegraphics[width=5in]{tensorflow_cnn}
-\caption{A portion of code from a  CNN tutorial using TensorFlow$\cite{tensorFlow}$}
+\caption[TensorFlow Code Example]
+	{A portion of code from a  CNN tutorial using TensorFlow$\cite{tensorFlow}$}
 \end{figure}	
 \section{What is a Tensor}
 	It can also be seen in Figure 6.1 that when using TensorFlow, ``tensors" are created. Along with the previous definition taken from the TensorFlow documentation on the home page of TensorFlow's website, it is also defined as: ``A framework to define and run computations involving tensors."\cite{tensorFlow}. Tensors generalize matrices and vectors, possibly in higher dimensions and are implemented as n-dimensional arrays. When using TensorFlow to write a program, a tensor is the object that is used by the rest of the program throughout the duration of the program, and is defined as a tf.Tensor. Usually, when a tensor is instantiated, it is only partially defined, as it may or not yet contain the data that the program will be working with. A tensor can easily be defined with its two properties, a data type and a shape\cite{tensorFlow}.
@@ -306,10 +328,12 @@ LeakyReLU_\alpha(z) = max(\alpha z, z)
 \includegraphics[width=7in]{rank0}
 \includegraphics[width=7in]{rank2}
 \includegraphics[width=7in]{rank1}
-\caption{Tensor ranks and the mathematical entities they represent followed by examples of tensors of different ranks.$\cite{tensorFlow}$}
+\caption[TensorFlow Ranks]
+	{Tensor ranks and the mathematical entities they represent followed by examples of tensors of different ranks.$\cite{tensorFlow}$}
 \end{figure}	
 \section{Using TensorFlow to Build a CNN}
 	TensorFlow can be used to build a convolutional neural network with any amount or sequence of layers. A set of images of any size can be used as long as the shape of the tensors are defined properly. After installing and importing TensorFlow, starting with the training phase, some tensors need to be defined to hold the data being worked within the network. For example, for a training set of 200 images, if all images in the training set are known to be 100x100 pixels and all images are RGB, we can define a tensor holding the input to a CNN as a tensor of type tf.float32. This means the pixel data of each image will be represented as a 3D array where each pixel is an element of a 2-D array and is represented by a three element array with the RGB values. The definition of this tensor is shown in the following four lines of Python code.
+ \lstset{xleftmargin=10pt,xrightmargin=10pt}
 \begin{lstlisting}
 batch_size = 200
 img_height = 100
@@ -326,7 +350,7 @@ labels = tf.placeholder(tf.int32, shape=(batch_size))
 	After having defined placeholders for the input and its classes, the network itself can be built. As mentioned in Chapter 5, a convolutional neural network has an input layer, convolutional layers, max pooling layers, and fully connected layers (one of which is the output layer). This may seem like a lot of work to write all of the code for these layers, and it can be to put it all together, but TensorFlow makes defining the layers easy. 
 	
 	Luckily, the TensorFlow API defines layers of all of these types that can be used when building a convolutional neural network. For example, we can define the layers of a simple CNN (where the input layer is an element in the training set) with the following lines of code, assuming all variables being used as parameters for layers have been previously defined. We can also assume here that all initial weights for trainings have been defined and generated.
-	
+ \lstset{xleftmargin=10pt,xrightmargin=10pt}
 \begin{lstlisting}
 #first convolutional layer
 layer_conv_1 = tf.nn.conv2d(input=input, filter=weights_kernel, strides=[1, 1, 1, 1], padding='SAME')
@@ -392,7 +416,8 @@ layer_fully_connected_out = tf.layers.dense(layer_fully_connected_2, num_classes
 \centering
 \includegraphics[width=3in]{short_party_dress}
 \includegraphics[width=3in]{ball_gown}
-\caption{An image of a short party dress and a puffy ball gown both with white backgrounds. Left Image: $\cite{partyDressImage}$. Right Image:  $\cite{ballGownImage}$.}
+\caption[Images of Dresses with White Backgrounds]
+	{An image of a short party dress and a puffy ball gown both with white backgrounds. Left Image: $\cite{partyDressImage}$. Right Image:  $\cite{ballGownImage}$.}
 \end{figure}		
 
 	This may or may not work for images with different backgrounds, which are most images. A solution to this problem would be to only allow images with white backgrounds (which is very limiting) or to manually find the object in an image and create a white background around the image. Even in the possible creation of a white background for every input image, the object must be very prominent in the image.  If this does work though, it is an option as a way to narrow down the possible matches of an image without having a large training set.
@@ -402,7 +427,8 @@ layer_fully_connected_out = tf.layers.dense(layer_fully_connected_2, num_classes
 \begin{figure}
 \centering
 \includegraphics[width=6in]{app_flow}
-\caption{Possible flow from an input image to a match within the designer's collection}
+\caption[Flow from Image to Match]
+	{Possible flow from an input image to a match within the designer's collection}
 \end{figure}		
 	
 	Since dresses are usually deformable objects, a method that may work for dresses is the nearest neighbour algorithm. The name of this machine learning algorithm actually tells us a lot about it. The simple idea here is to find the k (where k is an integer) closest elements to one element, x,  in a data set. The most prominent class among these k closest elements will become the class of x. In Theory, the part of the algorithm which determines the ``nearest" elements to x, should be able to determine the image that most closely matches an input image that has been labeled by the more focused and specific CNN, and only has a few possible matches.\cite{nearestNeighbour}

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Hailey_LeClair_Paper.aux
+The style file: plainyr.bst
+Database file #1: References.bib
+Warning--to sort, need year or key in nikeWhite
+Warning--to sort, need year or key in nikeOnMan
+Warning--to sort, need year or key in RiverTrail
+Warning--to sort, need year or key in ImageNet
+Warning--to sort, need year or key in deepMachineMastry
+Warning--to sort, need year or key in LeonardoFully
+Warning--to sort, need year or key in partyDressImage
+Warning--to sort, need year or key in ballGownImage
+Warning--to sort, need year or key in nearestNeighbour
+Warning--empty journal in lowe1999object
+You've used 24 entries,
+            2146 wiz_defined-function locations,
+            613 strings with 6552 characters,
+and the built_in function-call counts, 5345 in all, are:
+= -- 473
+> -- 191
+< -- 1
++ -- 78
+- -- 53
+* -- 240
+:= -- 849
+add.period$ -- 45
+call.type$ -- 24
+change.case$ -- 78
+chr.to.int$ -- 0
+cite$ -- 34
+duplicate$ -- 218
+empty$ -- 567
+format.name$ -- 53
+if$ -- 1162
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 10
+newline$ -- 96
+num.names$ -- 49
+pop$ -- 203
+preamble$ -- 1
+purify$ -- 59
+quote$ -- 0
+skip$ -- 220
+stack$ -- 0
+substring$ -- 219
+swap$ -- 36
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 90
+warning$ -- 10
+while$ -- 56
+width$ -- 26
+write$ -- 179
+(There were 10 warnings)
