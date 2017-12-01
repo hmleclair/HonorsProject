@@ -1,4 +1,5 @@
 #This runs but does not work well, I went with keras instead
+#Kept it here to show what I tried to do here, it is a bit over my head
 #import imFunctions as imf
 import tensorflow as tf
 import scipy.ndimage
@@ -20,8 +21,6 @@ image_names_train = []
 #PUT IMAGE NAMES IN HERE AND CHANGE THE FILES GOING IN THIS ONE IS FOR DRESSES
 for i  in range(0, 30):
         image_count += 1
-	#THIS WILL BE USEFUL IF I CAN ACTUALLY GET IMAGES OFF IMAGENET TO WORK!!!!!
-        #urllib.urlretrieve(url, os.path.join(os.getcwd(), './dress_images/long_dress_' + str(image_count) + '.jpg'))
         image = Image.open('./dress_images/dress_' +str(image_count) + '.jpg')
 	if image_count < 16:
 		image_names_train.append('long dress')
@@ -41,22 +40,16 @@ for i  in range(0, 30):
         print(image_array_train_temp.shape)
         images_data_train.append(np.array(image_array_train_temp))
 
-        #image_final = Image.fromarray(image_array)
-        #plt.imshow(image_final)
-        #plt.show()
-
 x_train = images_data_train
 image_count = 0
 for i in range(0, 10):
         image_count += 1
-        #urllib.urlretrieve(url, os.path.join(os.getcwd(), 'test' +str(image_count) + '.jpg'))
         image = Image.open('./dress_images/dress_' + str(image_count) +'.jpg')
 	if image_count < 6:
                 image_names_train.append('long dress')
         else:
                 image_names_train.append('puffy dress')
         img_resized = image.resize((img_height, img_width), Image.ANTIALIAS)
-        #image = Image.open(urllib.urlretrieve(url))
         image_array_test_temp = np.asarray(img_resized)
         print(image_array_test_temp.shape)
 
@@ -68,11 +61,7 @@ for i in range(0, 10):
                                          temp_image[x,y,i] = image_array_test_temp[x,y]
                 image_array_test_temp = temp_image
         images_data_test.append(np.array(image_array_test_temp))
-        #image_final = Image.fromarray(image_array)
-        #plt.imshow(image_final)
-        #plt.show()
 
-#data?
 images_data_train = [images_data_train[0], images_data_train[16], images_data_train[2], images_data_train[17], images_data_train[3],
 					images_data_train[18], images_data_train[4], images_data_train[19], images_data_train[5], images_data_train[20], 
 					images_data_train[6], images_data_train[21], images_data_train[7], images_data_train[22], images_data_train[8], 
