@@ -9,6 +9,8 @@ Using a neural network with a pretrained set of weights (VGG16 -  good explanati
 
 # How it Works (Visual)
 
+Look at image 'Flow_Chart.png'
+
 # How to Run the Program
 To classify and attempt to match an image, navigate to the 'final_project' directory and run the following commands with the path to the image, an working example will be shown below
 
